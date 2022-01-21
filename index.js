@@ -3,13 +3,7 @@ const app = express();
 
 const knex = require('knex')({
     client: 'pg',
-    connection: {
-        host: 'ec2-52-213-119-221.eu-west-1.compute.amazonaws.com',
-        port: 5432,
-        user: 'xrixzmtkrbzjrv',
-        password: '6ba7d612b16f2ba7d6f0346232de2338b9d58924f77f5a8b9d3a0fd644addff8',
-        database: 'dfphc4avh67nhh'
-    }
+    connection: 'postgres://xrixzmtkrbzjrv:6ba7d612b16f2ba7d6f0346232de2338b9d58924f77f5a8b9d3a0fd644addff8@ec2-52-213-119-221.eu-west-1.compute.amazonaws.com:5432/dfphc4avh67nhh?ssl=true'
 });
 
 
